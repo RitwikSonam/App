@@ -6,8 +6,9 @@ import { useNotification } from './hooks/useNotification';
 import { ProgressSteps } from './components/ProgressSteps';
 import { TimeCard } from './components/TimeCard';
 
-export default function App() {
-  const examDate = new Date('2025-05-04T00:00:00');
+// Change to named export
+export function App() {
+  const examDate = new Date('2025-05-01T00:00:00');
   const { days, hours, minutes, seconds } = useCountdown(examDate);
   const { quote, author, refreshQuote } = useQuotes();
   const { 
@@ -28,7 +29,7 @@ export default function App() {
       <div className="container mx-auto px-4 py-8">
         <header className="text-center mb-12">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">NEET 2025 Countdown</h1>
-          <p className="text-xl text-purple-200">Your journey to Neet AIIMS begins now</p>
+          <p className="text-xl text-purple-200">Your journey to success begins now</p>
         </header>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
