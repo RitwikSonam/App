@@ -8,7 +8,7 @@ import { TimeCard } from './components/TimeCard';
 
 // Change to named export
 export function App() {
-  const examDate = new Date('2025-05-01T00:00:00');
+  const examDate = new Date('2025-05-04T00:00:00');
   const { days, hours, minutes, seconds } = useCountdown(examDate);
   const { quote, author, refreshQuote } = useQuotes();
   const { 
